@@ -2,14 +2,14 @@ name: foo
 on: push
 jobs: 
   bar:
-    runs_on: ubuntu_latest
+    runs-on: ubuntu-latest
     steps: 
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v4
       - uses: quarto-dev/quarto-actions/setup@v2
         with: 
-          tinytex:true
+          tinytex: true
       - run: pip install ipykernel nbclient matplotlib PyMPDATA
       - run: quarto render MUP1.ipynb --to pdf --execute
-      - uses: actions/upload_artifact@v7
+      - uses: actions/upload-artifact@v4
         with: 
           path: MUP1.pdf
