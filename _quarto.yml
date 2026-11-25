@@ -8,6 +8,7 @@ format:
     fontsize: 10pt
     geometry: margin=1.8cm
     number-sections: false
+    fig-format: pdf
 
 execute:
   echo: false
