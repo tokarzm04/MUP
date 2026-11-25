@@ -1,18 +1,3 @@
-title: "Symulacja propagacji fali powodziowej"
-author: "Mateusz Tokarz"
-lang: pl
-
-format:
-  pdf:
-    papersize: a4
-    fontsize: 10pt
-    geometry: margin=1.8cm
-    number-sections: false
-
-execute:
-  echo: false
-  warning: false
-
 name: foo
 on: push
 jobs:
